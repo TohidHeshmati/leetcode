@@ -38,8 +38,7 @@ public class LongestPalindromicSubstring {
 class Solution {
     public String longestPalindrome(String s) {
         if (s == null || s.isBlank()) return "";
-        int longestFound = 0;
-        int palindromeEnd = 0, palindromeBegin = 0;
+        int longestFound = 0, palindromeEnd = 0, palindromeBegin = 0;
 
         for (int end = 0; end < s.length() + 1; end++) {
             for (int start = 0; start <= end ; start++) {
